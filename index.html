@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chinmay Amodkar's professional portfolio showcasing expertise in cybersecurity, ethical hacking, and web application security. Explore projects, certifications, and achievements in the field of information security.">
+    <meta name="keywords" content="Chinmay Amodkar, cybersecurity, ethical hacking, web application security, portfolio, TryHackMe, MMCOE, cybersecurity projects, Netlify portfolio">
+    <meta name="author" content="Chinmay Amodkar">
+    <meta name="robots" content="index, follow">
+    <meta name="twitter:title" content="Chinmay Amodkar - Cybersecurity Portfolio">
+    <meta name="twitter:description" content="Explore Chinmay Amodkar's portfolio featuring projects, certifications, and achievements in cybersecurity and ethical hacking.">
+    <meta name="linkedin:title" content="Chinmay Amodkar - Cybersecurity Portfolio">
+    <meta name="linkedin:description" content="Explore Chinmay Amodkar's portfolio featuring projects, certifications, and achievements in cybersecurity and ethical hacking.">
+    <meta property="og:title" content="Chinmay Amodkar - Cybersecurity Enthusiast">
+    <meta property="og:description" content="Explore Chinmay Amodkar's portfolio featuring projects, certifications, and achievements in cybersecurity and ethical hacking.">
+    <meta property="og:url" content="https://chinmayamodkar.netlify.app/">
+    <meta property="og:type" content="website">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://chinmayamodkar.netlify.app/">
+    <title>Chinmay Amodkar - Cybersecurity Portfolio</title>
+</head>
+<body>
+    <!-- Full Screen Booting Overlay -->
+    <div id="booting-overlay"> </div>
+
+    <!-- Desktop Layout -->
+    <div class="desktop">
+        <!-- Icons Section - Top Left -->
+        <div class="icons">
+            <a href="https://drive.google.com/file/d/11uCi3M_FmeL5crTcpBjH5JpY3gb5A9BF/view?usp=sharing" class="icon" id="resume" aria-label="Open Resume" target="_blank" rel="noopener noreferrer">
+                <img src="resume.png" alt="Resume">
+                <span>Resume</span>
+            </a>
+            <a href="https://github.com/root-chinmay" class="icon" id="github" aria-label="Open GitHub profile" target="_blank" rel="noopener noreferrer">
+                <img src="github.png" alt="GitHub">
+                <span>GitHub</span>
+            </a>
+            <a href="https://tryhackme.com/p/rootchinmay" class="icon" id="thm" aria-label="Open TryHackMe profile" target="_blank" rel="noopener noreferrer">
+                <img src="thm.png" alt="THM Profile">
+                <span>THM</span>
+            </a>
+            <a href="https://www.linkedin.com/in/root-chinmay/" class="icon" id="linkedin" aria-label="Open LinkedIn profile" target="_blank" rel="noopener noreferrer">
+                <img src="linkedin.png" alt="Linkedin">
+                <span>Linkedin</span>
+            </a>
+        </div>
+
+        <!-- Floating Dock at the Bottom -->
+        <div class="dock" role="toolbar" aria-label="Dock">
+            <div class="icon" id="terminal-icon" role="button" tabindex="0" aria-label="Open Terminal">
+                <img src="terminal.png" alt="Terminal">
+                <span>Terminal</span>
+            </div>
+            <div class="icon" id="folder-icon" role="button" tabindex="0" aria-label="Open Certifications">
+                <img src="folder.png" alt="Folder">
+                <span>Certifications</span>
+            </div>
+            <div class="icon" id="projects-icon" role="button" tabindex="0" aria-label="Open Projects">
+                <img src="projects.png" alt="Projects">
+                <span>Projects</span>
+            </div>
+            <!-- Experience Icon uses exp.png as requested -->
+            <div class="icon" id="experience-icon" role="button" tabindex="0" aria-label="Open Experience">
+                <img src="exp.png" alt="Experience">
+                <span>Experience</span>
+            </div>
+        </div>
+
+        <!-- Terminal Section (Initially Hidden) -->
+        <div class="terminal" id="terminal" role="dialog" aria-modal="true" tabindex="-1">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="button yellow" id="minimize-terminal" title="Minimize"></div>
+                    <div class="button green" id="fullscreen-terminal" title="Fullscreen"></div>
+                    <div class="button red" id="close-terminal" title="Close"></div>
+                </div>
+                <div class="terminal-prompt">
+                    <span class="prompt-text">Summary@Chinmay-Amodkar:~$</span>
+                </div>
+                <div class="terminal-body">
+                    <pre id="terminal-output" aria-live="polite"></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="certifications-window" id="certifications-window" role="dialog" aria-modal="true" tabindex="-1">
+            <div class="window-header">
+                <div class="button red" id="close-certifications" title="Close"></div>
+                <span>Certifications</span>
+            </div>
+            <div class="certifications-content">
+                <a href="https://drive.google.com/file/d/1lTVY2R6f9JetNMWvCkxI4Ki59h7Zc6ET/view?usp=sharing" class="cert-image" alt="Certification 1" target="_blank" rel="noopener noreferrer">
+                    <img src="linux.jpeg" alt="Certification 1" class="cert-image">
+                </a>
+                <a href="https://drive.google.com/file/d/1qVu0nUXGsvzD6-TAP8u6VkQpj9AIEH7H/view?usp=sharing" class="cert-image" alt="Certification 2" target="_blank" rel="noopener noreferrer">
+                    <img src="nwt.jpeg" alt="Certification 2" class="cert-image">
+                </a>
+                <a href="https://www.credly.com/badges/7d20e728-1107-426b-829c-f8eac992928a" class="cert-image" alt="Certification 3" target="_blank" rel="noopener noreferrer">
+                    <img src="cisco.png" alt="Certification 3" class="cert-image">
+                </a>
+            </div>
+        </div>
+
+        <div class="projects-window" id="projects-window" role="dialog" aria-modal="true" tabindex="-1">
+            <div class="window-header">
+                <div class="button red" id="close-projects" title="Close"></div>
+                <span>Latest Project of MMCOE ChatBot</span>
+            </div>
+            <div class="projects-content">
+                <a href="https://mmcoechatbot.vercel.app/" class="proj-image" alt="Project 1" target="_blank" rel="noopener noreferrer">
+                    <img src="chatbot.png" alt="Project 1" class="proj-image">
+                </a>
+            </div>
+        </div> 
+
+        <!-- Experience Window (new) - uses the same window styling/animation as other windows -->
+        <div class="projects-window" id="experience-window" role="dialog" aria-modal="true" tabindex="-1">
+            <div class="window-header">
+                <div class="button red" id="close-experience" title="Close"></div>
+                <span>Experience</span>
+            </div>
+            <div class="projects-content experience-content">
+                <div class="exp-item">
+                    <h3>Cybersecurity & IT Learner <span class="dates">Jun 2026 – Present</span></h3>
+                    <ul>
+                        <li>Building practical knowledge of Linux, networking, and cybersecurity fundamentals.</li>
+                        <li>Working with tools such as Kali Linux, Burp Suite, Nmap, Wireshark, and DVWA.</li>
+                        <li>Learning web application security concepts including SQL Injection, authentication vulnerabilities, and the OWASP Top 10.</li>
+                        <li>Developing personal web development and AI-based projects to strengthen problem-solving and technical skills.</li>
+                        <li>Exploring Python, HTML, CSS, JavaScript, and modern web technologies.</li>
+                        <li>Practicing ethical hacking concepts through labs and CTF platforms.</li>
+                        <li>Passionate about creating secure, user-friendly applications and continuously expanding my cybersecurity expertise.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Date and Time Display -->
+        <div class="date-time" id="date-time" aria-hidden="true"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
